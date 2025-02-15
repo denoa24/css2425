@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        color: green;
+      }
+      .demo2 {
+        color: blue;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="apasa">Schimba culoarea</button>
+    <button id="apasa2">Schimba div</button>
+    <button id="apasa3">Schimba demo</button>
+    <div id="para">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ad
+        assumenda impedit libero laboriosam. Inventore facilis hic fugiat
+        perferendis voluptatum?
+      </p>
+      <p>
+        Minima ratione nesciunt ex excepturi earum ut delectus! Nesciunt
+        laboriosam repellat optio quae unde voluptatibus animi saepe totam
+        tenetur rem?
+      </p>
+      <p>
+        Necessitatibus vel eaque architecto eligendi labore, commodi
+        exercitationem, doloribus officia amet cumque nostrum. Nobis autem
+        cumque quaerat voluptas quasi voluptates!
+      </p>
+      <p>
+        Consequatur maiores, quae, nulla nesciunt nam a adipisci tempore
+        repellat minus consectetur ipsum nobis inventore perspiciatis ea libero
+        perferendis eius.
+      </p>
+      <p>
+        Similique eveniet consequuntur quae enim obcaecati et quia quo commodi
+        nesciunt iusto, ab tenetur. Quis beatae quisquam repellat optio illo.
+      </p>
+      <p>
+        Ea omnis laudantium vel, recusandae aspernatur veritatis necessitatibus
+        accusantium ut error dignissimos atque nesciunt perferendis velit facere
+        sequi nemo expedita.
+      </p>
+      <p>
+        Animi quas quos voluptates sunt accusamus! Repellat voluptates provident
+        impedit ea dolorum labore perspiciatis ab possimus. Id, dicta? Rerum,
+        officiis.
+      </p>
+      <p>
+        Recusandae officiis consequuntur autem debitis aut alias animi eveniet
+        adipisci sunt quia nemo id quisquam ad distinctio, laboriosam, molestiae
+        dolores!
+      </p>
+      <p>
+        Voluptatibus laboriosam suscipit maiores, nemo reprehenderit eaque
+        quibusdam optio ad nesciunt repudiandae amet sint aliquid fuga itaque
+        rerum fugit officiis.
+      </p>
+      <p>
+        Accusantium omnis sequi labore, voluptate, consectetur in rerum
+        doloremque dolore odio magni, officiis consequatur amet nemo
+        reprehenderit assumenda vero tenetur?
+      </p>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde
+        exercitationem nulla quas officiis, non molestiae illum ut earum
+        accusamus, ea dolorem nostrum impedit eum illo? Officiis quaerat
+        consectetur non?
+      </h2>
+    </div>
+
+    <p class="demo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, eos
+      soluta fugit facere recusandae placeat sapiente iure officiis ducimus
+      animi?
+    </p>
+    <p class="demo">
+      Pariatur adipisci aliquam modi voluptatum perspiciatis voluptatem ipsum
+      explicabo, inventore aut dolorum maiores delectus debitis necessitatibus
+      neque perferendis quia ratione!
+    </p>
+    <p class="demo">
+      Unde cupiditate officiis rerum illo, aperiam possimus tempore inventore
+      soluta commodi magni enim fugit ratione error recusandae architecto.
+      Omnis, maiores!
+    </p>
+    <p class="demo">
+      Recusandae dolor itaque veritatis deserunt reprehenderit nesciunt quae
+      tenetur alias quaerat, quibusdam aspernatur odit maiores natus enim
+      consequatur, illo commodi.
+    </p>
+    <script>
+      let btn = document.getElementById("apasa");
+      let p = document.getElementsByTagName("p");
+      let btn2 = document.getElementById("apasa2");
+      let div = document.getElementById("para");
+      let btn3 = document.getElementById("apasa3");
+      let paraDemo = document.getElementsByClassName("demo");
+      //   let paraDemo = document.querySelectorAll('.demo');
+
+      // let btn = document.querySelector('#apasa');
+      btn.addEventListener("click", function () {
+        // for (const element of p) {
+        //     element.style.color = "red";
+        // }
+        let arry = [...p];
+        arry.forEach((element) => {
+          element.style.color = "red";
+          element.style.fontSize = "34px";
+        });
+        // p[0].style.color = "red";
+      });
+      btn2.addEventListener("click", function () {
+        div.style.cssText =
+          "border:1px solid red; font-size: 16px; color:#e3e3e3";
+      });
+      btn3.addEventListener("click", function () {
+        let myArr = [...paraDemo];
+        myArr.forEach((element) => {
+          element.classList.toggle("demo2");
+        });
+      });
+    </script>
+  </body>
+</html>

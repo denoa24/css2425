@@ -1,0 +1,38 @@
+div{
+    border: solid #af0b0e;
+    margin: 15px auto;
+    background-color: aqua;
+}
+div p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+    color: grey;
+}
+div div{
+    border: solid yellow;
+    margin: 15px auto;
+    background-color: greenyellow;
+}
+div div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    text-align: left;
+    text-indent: 15px;
+    color: red;
+}
+div div div{
+    border: solid orange;
+    margin: 10px auto;
+    background-color: purple;
+}
+div div div p{
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: left;
+    text-indent: 10px;
+}
