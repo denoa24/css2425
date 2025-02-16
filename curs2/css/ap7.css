@@ -1,0 +1,19 @@
+a:hover {
+    text-decoration: none;
+}
+
+.column img {
+    display: block;
+}
+
+/* SEPIA */
+
+.column#sepia img {
+    filter: sepia(100%);
+    -webkit-transition: .3s ease-in-out;
+}
+
+.column#sepia:hover img {
+    
+    filter: sepia(0);
+}
