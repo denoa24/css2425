@@ -2,13 +2,23 @@ body {
     background-image: url("../img/rocket.png"), url("../img/earth.png"), url("../img/space2.png");
     background-repeat: no-repeat, no-repeat, repeat;
     background-size: auto, 20%, auto;
-    background-position: 20% 20%, center center, 0% 0%;
+    background-position: center center, 0% 0%;
     height: 100vh;
     animation-name: demo;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: both;
+}
+.rocket {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../img/rocket.png") no-repeat center/contain;
+    top: 50%;
+    left: 50%;
+    transform-origin: -100px 0;
+    animation: rotateRocket 5s linear infinite;
 }
 @keyframes demo {
     from {
