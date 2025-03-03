@@ -1,0 +1,20 @@
+{
+  "name": "primul-meu-proiect",
+  "version": "1.0.0",
+  "description": "Primul meu proiect nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "vanillajs"
+  ],
+  "author": "Denoa",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.2",
+    "sass": "^1.85.1"
+  }
+}
